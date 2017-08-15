@@ -1,0 +1,382 @@
+/*
+STYLESHEET COMPILED USING SASS
+*/
+/* MIXINS
+------------------------- */
+/* ----------------------------------------------------------
+    Client Name CSS
+    Managed by: Stacey Simmons Design
+
+    TABLE OF CONTENT
+
+    - HTML5 Boilerplate
+    - COMMON STYLES
+    - LAYOUT
+    - HOMEPAGE 
+    - SUBPAGES
+    - SIDEBAR
+    - FRAMEWORK
+    - UTILITY
+    - PRINT
+    - RESPONSIVE
+    - CROSS-BROWSER
+        
+---------------------------------------------------------- */
+/* HTML5 Boilerplate
+------------------------- */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* end HTML5 Boilerplate reset */
+/* HTML5 boilerplate base styles */
+html {
+  overflow-y: scroll; }
+
+body {
+  font: 13px/1.231 sans-serif;
+  *font-size: small; }
+
+select, input, textarea, button {
+  font: 99% sans-serif; }
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif; }
+
+ul, ol {
+  list-style-type: none; }
+
+small {
+  font-size: 85%; }
+
+b, strong, th {
+  font-weight: bold; }
+
+i, em {
+  font-style: italic; }
+
+td, td img {
+  vertical-align: top; }
+
+sub {
+  vertical-align: sub;
+  font-size: smaller; }
+
+sup {
+  vertical-align: super;
+  font-size: smaller; }
+
+pre {
+  padding: 15px;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word; }
+
+textarea {
+  overflow: auto; }
+
+.ie6 legend, .ie7 legend {
+  margin-left: -7px; }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+label, input[type=button], input[type=submit], button {
+  cursor: pointer; }
+
+button, input, select, textarea {
+  margin: 0; }
+
+button {
+  width: auto;
+  overflow: visible; }
+
+/* end HTML5 boilerplate base styles */
+/* BSD base styles */
+caption, th {
+  text-align: left; }
+
+/* COMMON STYLES
+------------------------- */
+select, input, textarea {
+  color: #444; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 20px; }
+
+h4 {
+  font-size: 18px; }
+
+a:hover, a:active {
+  outline: none; }
+
+a, a:active, a:visited {
+  color: #607890;
+  text-decoration: none; }
+
+a:hover, a:focus {
+  color: #036; }
+
+a:link {
+  -webkit-tap-highlight-color: #FF5E99; }
+
+.b-orange {
+  border: 1px solid orange; }
+
+.b-yellow {
+  border: 1px solid yellow; }
+
+.b-blue {
+  border: 1px solid blue; }
+
+.b-red {
+  border: 1px solid red; }
+
+.b-purple {
+  border: 1px solid purple; }
+
+/* LAYOUT
+------------------------- */
+html, body {
+  width: 100%;
+  height: 100%; }
+
+header {
+  width: 100%; }
+
+.main {
+  width: 100%; }
+
+footer {
+  width: 100%; }
+
+/* HOMEPAGE
+------------------------- */
+/* 05 =SUBPAGES
+------------------------- */
+/* SIDEBAR
+------------------------- */
+/* 08 =UTILITY
+------------------------- */
+.floatl {
+  float: left;
+  margin: 0;
+  padding: 0 10px 10px 0; }
+
+.floatr {
+  float: right;
+  margin: 0;
+  padding: 0 0 10px 10px; }
+
+.required {
+  color: #CC0000; }
+
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr; }
+
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
+.visuallyhidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before, .clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+::-moz-selection {
+  background: #1fb9e7;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #1fb9e7;
+  color: #fff;
+  text-shadow: none; }
+
+/* PRINT
+------------------------- */
+@media print {
+  * {
+    background: transparent !important;
+    color: #444 !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline; }
+
+  #content a:after {
+    content: " (" attr(href) ")"; }
+
+  abbr:after {
+    content: " (" attr(title) ")"; }
+
+  .ir a:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; }
+
+  #sidebar,
+  #editToggle,
+  .editThis,
+  #navigation,
+  #addthis,
+  #search,
+  #nav {
+    display: none; }
+
+  /* hide disqus since it is extraneous content that just increases page size */
+  #disqus_thread {
+    display: none; }
+
+  a.dsq-brlink {
+    display: none; }
+
+  /* float blog entry images to decrease page length */
+  #main {
+    overflow: hidden; }
+
+  #main img {
+    float: left;
+    clear: both;
+    /*keeps images from piling up next to each other*/
+    margin: 0 10px 10px 0; } }
+/* RESPONSIVE - TABLET
+------------------------- */
+/* RESPONSIVE - TABLET
+------------------------- */
+/* CROSS-BROWSER
+------------------------- */
+
+/*# sourceMappingURL=styles.css.map */
