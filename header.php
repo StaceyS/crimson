@@ -35,8 +35,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/theme/favicon.png">
-  <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/images/theme/apple-touch-icon.png">
+  <link rel="shortcut icon" href="<?php bloginfo('url'); ?>favicon.png">
+  <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/assets/images/theme/apple-touch-icon.png">
 
   <!-- Pingback url -->
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
@@ -47,20 +47,13 @@
 
 <body class="<?php echo $post->post_name; ?>">
 
-    <header class="header">
-    
-		<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-		<h4><?php bloginfo('description'); ?></h4>
+    <img class="logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo-circle.svg">
 
-		<nav>
+    <header class="primary-nav">
 			<?php wp_nav_menu( array( 
 				'theme_location' => 'menu-1',
 				'sort_column' => 'menu_order',
 				'container' => 'false', 
 			) ); ?>
-		</nav>
-		
-    </header>
-    
-    <div class="main">
-    
+      <a class="nav-toggle" href="#"><img src="<?php bloginfo('template_url'); ?>/assets/images/layout/nav-toggle-white.svg"></a> 
+    </header>    
